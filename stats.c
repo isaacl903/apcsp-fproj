@@ -86,7 +86,13 @@ float calcMode(float nums[])
 {
 	return 1.0;
 }
-float calcStandardDeviation(float nums[])
+float calcStandardDeviation(float nums[], float mean)
 {
-	return 1.0;
+	float out;
+	for(int i=0; i<10; i++)
+	{
+		out=out+(nums[i]-mean)*(nums[i]-mean);
+	}
+	out=out/10;
+	return out;
 }

@@ -4,4 +4,4 @@ void sortNums(float nums[], int l, int r);
 float calcMedian(float nums[]);
 void printNums(float nums[]);
 float calcMode(float nums[]);
-float calcStandardDeviation(float nums[]);
+float calcStandardDeviation(float nums[], float mean);

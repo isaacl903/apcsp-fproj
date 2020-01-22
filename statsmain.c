@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
         printNums(nums);
 	float mode=calcMode(nums);
 	printf("The mode is %.2f\n", mode);
-	float standardDeviation=calcStandardDeviation(nums);
+	float standardDeviation=calcStandardDeviation(nums, mean);
 	printf("The standard deviation is %.2f\n", standardDeviation);
 }
 

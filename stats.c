@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "stats.h"
 float calcMean(float nums[])
 {
 	float sum=0;
@@ -82,20 +82,11 @@ void printNums(float nums[])
         }
         printf("\n");
 }
-int main(int argc, char* argv[])
+float calcMode(float nums[])
 {
-        char input[256];
-        float nums[10];
-        if(argc==11)
-        {
-		for(int i=0; i<10; i++)
-		{
-			nums[i]=atof(argv[i+1]);
-		}
-        }
-	float mean=calcMean(nums);
-	printf("The mean is %.2f\n", mean);
-	float median=calcMedian(nums);
-	printf("The median is %.2f\n", median);
-	printNums(nums);
+	return 1.0;
+}
+float calcStandardDeviation(float nums[])
+{
+	return 1.0;
 }

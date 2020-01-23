@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "stats.h"
-
+#include <math.h>
 int main(int argc, char* argv[])
 {
         float nums[10];

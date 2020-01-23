@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stats.h"
+<<<<<<< HEAD
 #include <math.h> 
+=======
+#include <math.h>
+>>>>>>> 66d2f92e7c0aec7481735d06cb26fa105ed5a9d1
 float calcMean(float nums[])
 {
 	float sum=0;

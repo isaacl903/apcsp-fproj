@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stats.h"
+#include <math.h>
 float calcMean(float nums[])
 {
 	float sum=0;
@@ -93,6 +94,6 @@ float calcStandardDeviation(float nums[], float mean)
 	{
 		out=out+(nums[i]-mean)*(nums[i]-mean);
 	}
-	out=out/10;
+	out=sqrt(out/10);
 	return out;
 }

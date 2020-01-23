@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stats.h"
+#include <math.h> 
 float calcMean(float nums[])
 {
 	float sum=0;
@@ -84,7 +85,30 @@ void printNums(float nums[])
 }
 float calcMode(float nums[])
 {
-	return 1.0;
+        int n = 10;
+        float a[n];
+        for (int i = 0; i < n; i++)
+           a[i] = nums[i];
+
+        float maxValue = 0;
+        int maxCount = 0;
+
+   for (int i = 0; i < n; ++i) {
+      int count = 0;
+
+      for (int j = 0; j < n; ++j) {
+         if (a[j] == a[i])
+         ++count;
+      }
+
+      if (count > maxCount) {
+         maxCount = count;
+         maxValue = a[i];
+      }
+   }
+
+   return maxValue;
+
 }
 float calcStandardDeviation(float nums[], float mean)
 {
@@ -93,6 +117,6 @@ float calcStandardDeviation(float nums[], float mean)
 	{
 		out=out+(nums[i]-mean)*(nums[i]-mean);
 	}
-	out=out/10;
+	out=sqrt(out/10);
 	return out;
 }

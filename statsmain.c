@@ -18,10 +18,10 @@ int main(int argc, char* argv[])
         float median=calcMedian(nums);
         printf("The median is %.2f\n", median);
         printNums(nums);
+	float standardDeviation=calcStandardDeviation(nums, mean);
+        printf("The standard deviation is %.2f\n", standardDeviation);
 	float mode=calcMode(nums);
 	printf("The mode is %.2f\n", mode);
-	float standardDeviation=calcStandardDeviation(nums, mean);
-	printf("The standard deviation is %.2f\n", standardDeviation);
 }
 
 
